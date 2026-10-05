@@ -21,7 +21,7 @@ if queue_on_teleport then
 	connection = game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(teleportState, placeId)
 		if teleportState == Enum.TeleportState.InProgress and placeId == game.PlaceId then
 			connection:Disconnect();
-			queue_on_teleport(string.format("script_key='%s'loadstring(game:HttpGet('https://raw.githubusercontent.com/andrewdarkyywastaken/moonlight/main/loader.lua'))()", script_key));
+			queue_on_teleport(string.format("script_key='%s'loadstring(game:HttpGet('https://raw.githubusercontent.com/andrewdarkyywastaken/moon/light/main.lua'))()", script_key));
 		end;
 	end);
 end;
